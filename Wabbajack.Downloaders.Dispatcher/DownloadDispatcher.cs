@@ -305,7 +305,7 @@ public class DownloadDispatcher
 
     public Task<IEnumerable<IDownloader>> AllDownloaders(IEnumerable<IDownloadState> downloadStates)
     {
-        return Task.FromResult(downloadStates.Select(d => Downloader(new Archive {State = d})).Distinct());
+        return Task.FromResult(downloadStates.Where(a => a is not Wabbajack.DTOs.DownloadStates.TESAlliance).Select(d => Downloader(new Archive { State = d })).Distinct());
     }
 
     public bool Matches(Archive archive, ServerAllowList mirrorAllowList)

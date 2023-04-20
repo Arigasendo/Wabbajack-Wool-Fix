@@ -296,7 +296,18 @@ public class StandardInstaller : AInstaller<StandardInstaller>
                         }
                     }
 
-                    meta = AddInstalled(_downloadDispatcher.MetaIni(archive));
+                    if (archive.State is not Wabbajack.DTOs.DownloadStates.TESAlliance)
+                    {
+                        meta = AddInstalled(_downloadDispatcher.MetaIni(archive));
+                    }
+                    else
+                    {
+                        meta = new[]
+                            {
+                                "[General]",
+                                "removed=false"
+                            };
+                    }
                 }
 
                 _logger.LogInformation("Writing {FileName}", metaFile.FileName);
