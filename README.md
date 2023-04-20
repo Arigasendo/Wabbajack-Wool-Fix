@@ -1,4 +1,26 @@
-# Wabbajack
+This Repository is a Fork of the Wabbajack That changes 2 Lines of code in order to make the installation of the Oblivion Wool Modpack possible.
+In Order to Install Wool you Will need to Download the Build of this Repository under Release and simply Start the Program.
+
+As Some of the Mods Are not available anymore you will have to Download them from different sources and put them into your Modpack download folder manually.
+Some of them Are on the Wool Github Repository under section FAQ: https://github.com/Alxariam/WOOL
+The Website of The Lost Spires v14 is also not working anymore so you will have to Download it.
+I used this site: https://www.moddb.com/mods/oblivion-overhaul-mod/downloads/the-lost-spires-v14
+
+Additionally you will have to Download "A Brotherhood Renewed 1.1.2" as it was the cause of the installer not working.
+A Brotherhood Renewed 1.1.2: https://tesalliance.org/forums/index.php?/files/file/422-a-brotherhood-renewed/
+
+After you moved all the mods Into your download Folder you can get the Modlists wabbajack file here:
+https://build.wabbajack.org/authored_files/
+
+Just search for WOOL.wabbajack (with upload time "09/14/2021 23:12:35") and download it via the "(Slow) HTTP Direct Link" Button.
+
+Now you just have to Open the Wabbajack File using Install from Disk.
+
+Don't forget to do the stuff mentioned in the Post-Installation Section on the WOOL Repository.
+
+Use this Forked Program at your Own Risk. I will not take any responsibility for damage caused by this program.
+
+# Original Wabbajack Readme
 
 [![Discord](https://img.shields.io/discord/605449136870916175)](https://discord.gg/wabbajack)
 [![CI Tests](https://github.com/wabbajack-tools/wabbajack/actions/workflows/tests.yaml/badge.svg)](https://github.com/wabbajack-tools/wabbajack/actions/workflows/tests.yaml)
